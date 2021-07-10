@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Calendar</title>
+
+
+    <style>
+        .calendar-container {
+            display: grid;
+            grid-template-columns: repeat(7, 1Fr);
+            /* grid-template-rows: 20px repeat(5, 1Fr); */
+            
+            grid-gap: 10px;
+            background-color: rgb(168, 168, 168);
+            padding: 5%;
+        }
+
+        .date,
+        .day {
+            border: 1px solid aqua;
+            height: 60px;
+            border-radius: 10px;
+            background-color: blanchedalmond;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            font-weight: 650;
+
+        }
+
+        .date:hover {
+            background-color: rgb(106, 177, 177);
+            color: black;
+        }
+
+        .other-month, .day {
+            background-color: rgb(92, 86, 86);
+        }
+
+        .day {
+            height: 40px;
+        }
+
+        .off-day {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>My Awesome Calendar</h1>
+
+
+    <div class="calendar-container">
+        <div title="Sunday" class="day">Sun</div>
+        <div title="Monday" class="day">Mon</div>
+        <div title="Tuesday" class="day">Tue</div>
+        <div title="Wednesday" class="day">Wed</div>
+        <div title="Thursday" class="day">Thu</div>
+        <div title="Friday" class="day off-day">Fri</div>
+        <div title="Saturday" class="day off-day">Sat</div>
+
+        <div class="date other-month">29</div>
+        <div class="date other-month">30</div>
+        <div class="date other-month">31</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date off-day">3</div>
+        <div class="date off-day">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date off-day">10</div>
+        <div class="date off-day">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date off-day">17</div>
+        <div class="date off-day">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date off-day">24</div>
+        <div class="date off-day">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date other-month off-day">1</div>
+        <div class="date other-month off-day">2</div>
+    </div>
+
+</body>
+
+</html>
